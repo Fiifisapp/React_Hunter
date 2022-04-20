@@ -76,3 +76,7 @@ const signInUser = (email, password) => {
     logoutUser,
     forgotPassword,
   };
+  return (
+    <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>
+  );
+};
