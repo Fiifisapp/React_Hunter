@@ -46,3 +46,11 @@ export const useUserContext = () => {
     .catch((err) => setError(err.message))
     .finally(() => setLoading(false));
 };
+
+const signInUser = (email, password) => {
+    setLoading(true);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((res) => console.log(res))
+      .catch((err) => setError(err.code))
+      .finally(() => setLoading(false));
+  };
