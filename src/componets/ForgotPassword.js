@@ -6,3 +6,13 @@ const ForgotPassword = () => {
     const emailRef = useRef();
   const { forgotPassword } = useUserContext();
 
+  const forgotPasswordHandler = () => {  
+    const email = emailRef.current.value;
+    if (email)
+      forgotPassword(email).then(() => {
+        emailRef.current.value = "";
+      })
+      .catch((err) => {
+          return (<p>{err.message}</p>)
+      });
+  };
