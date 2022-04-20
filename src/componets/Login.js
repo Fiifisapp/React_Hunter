@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
-
 const Signin = () => {
   const emailRef = useRef();
   const psdRef = useRef();
@@ -23,4 +22,17 @@ const Signin = () => {
     //     emailRef.current.value = "";
     //   });
   };
+
+  return (
+    <div className="form">
+      <h2> Login </h2>
+      <form onSubmit={onSubmit}>
+        <input placeholder="Email" type="email" ref={emailRef} />
+        <input placeholder="Password" type="password" ref={psdRef} />
+        <button type="submit">Sign In</button>
+        <p onClick={forgotPasswordHandler}>Forgot Password?</p>
+      </form>
+    </div>
+  );
 };
+export default Signin;
