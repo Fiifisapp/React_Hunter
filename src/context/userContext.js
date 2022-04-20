@@ -28,3 +28,8 @@ export const useUserContext = () => {
               } else {
                 setUser(null);
               }
+              setError("");
+      setLoading(false);
+    });
+    return unsubscribe;
+  }, []);
