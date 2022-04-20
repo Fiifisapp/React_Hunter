@@ -23,3 +23,8 @@ export const useUserContext = () => {
     useState(() => {
         setLoading(true);
         const unsubscribe = onAuthStateChanged(auth, (res) => {
+            if (res) {
+                setUser(res);
+              } else {
+                setUser(null);
+              }
