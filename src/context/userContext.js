@@ -20,3 +20,6 @@ export const useUserContext = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
+    useState(() => {
+        setLoading(true);
+        const unsubscribe = onAuthStateChanged(auth, (res) => {
