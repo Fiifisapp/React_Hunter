@@ -8,3 +8,5 @@ const firebaseConfig = {
   projectId: "fir-auth-react-e8399",
   storageBucket: "fir-auth-react-e8399.appspot.com",
   messagingSenderId: "962605851630",
+  appId: "1:962605851630:web:8a54bce7d9047760a9e4ff",
+};
