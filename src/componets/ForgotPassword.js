@@ -1,11 +1,2 @@
-import React from 'react'
-
-const ForgotPassword = () => {
-  return (
-    <div>
-        ForgotPassword
-    </div>
-  )
-}
-
-export default ForgotPassword
+import React , { useRef } from 'react'
+import { useUserContext } from '../context/userContext';
