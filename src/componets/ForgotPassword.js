@@ -16,3 +16,6 @@ const ForgotPassword = () => {
           return (<p>{err.message}</p>)
       });
   };
+  return (
+    <div className="form">
+      <h2> Forgot Password </h2>
