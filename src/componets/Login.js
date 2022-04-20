@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
-const Signin = () => {
+
+const Login = () => {
   const emailRef = useRef();
   const psdRef = useRef();
   const { signInUser } = useUserContext();
@@ -35,4 +36,4 @@ const Signin = () => {
     </div>
   );
 };
-export default Signin;
+export default Login;
