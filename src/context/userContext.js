@@ -38,3 +38,7 @@ export const useUserContext = () => {
     setLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then(() =>
+      updateProfile(auth.currentUser, {
+        displayName: name,
+      })
+    )
