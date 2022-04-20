@@ -66,3 +66,13 @@ const signInUser = (email, password) => {
       console.log(err.message)
     }
   };
+
+  const contextValue = {
+    user,
+    loading,
+    error,
+    signInUser,
+    registerUser,
+    logoutUser,
+    forgotPassword,
+  };
