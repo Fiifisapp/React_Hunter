@@ -54,3 +54,7 @@ const signInUser = (email, password) => {
       .catch((err) => setError(err.code))
       .finally(() => setLoading(false));
   };
+
+  const logoutUser = () => {
+    signOut(auth);
+  };
