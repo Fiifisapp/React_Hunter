@@ -33,3 +33,8 @@ export const useUserContext = () => {
     });
     return unsubscribe;
   }, []);
+
+  const registerUser = (email, password, name) => {
+    setLoading(true);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(() =>
