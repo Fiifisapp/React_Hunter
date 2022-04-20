@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
-
 const Signin = () => {
   const emailRef = useRef();
   const psdRef = useRef();
