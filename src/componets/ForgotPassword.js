@@ -19,3 +19,10 @@ const ForgotPassword = () => {
   return (
     <div className="form">
       <h2> Forgot Password </h2>
+
+      <input placeholder="Email" type="email" ref={emailRef} />
+        <button type="submit" onClick={forgotPasswordHandler}>Reset</button>
+      
+    </div>
+  )
+}
