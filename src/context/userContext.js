@@ -58,3 +58,11 @@ const signInUser = (email, password) => {
   const logoutUser = () => {
     signOut(auth);
   };
+
+  onst forgotPassword = async (email) => {
+    try{
+      await sendPasswordResetEmail(auth, email);
+    } catch( err ){
+      console.log(err.message)
+    }
+  };
