@@ -7,4 +7,11 @@ const Signin = () => {
   const psdRef = useRef();
   const { signInUser } = useUserContext();
   const history = useHistory();
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const email = emailRef.current.value;
+    const password = psdRef.current.value;
+    if (email && password) signInUser(email, password);
+  };
 };
