@@ -18,3 +18,5 @@ export const useUserContext = () => {
   export const UserContextProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+
