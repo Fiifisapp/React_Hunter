@@ -4,7 +4,9 @@ import Signup from "./signup";
 
 const Auth = () => {
   return (
-    <div>Auth</div>
+    <div>
+      Auth
+    </div>
   )
 }
 
