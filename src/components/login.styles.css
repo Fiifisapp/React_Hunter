@@ -93,4 +93,8 @@
     top: 80%;
     left: 60%;
   }
+  .login-text:hover {
+    cursor: pointer;
+    color: #5f5b5b;
+  }
 }
