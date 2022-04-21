@@ -30,4 +30,8 @@
     color: white;
     border: none;
   }
+  .login-button:hover {
+    background-color: #5F5B5B;
+    cursor: pointer;
+  }
 }
