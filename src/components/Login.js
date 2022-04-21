@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
+import "./login.styles.css";
 
 const Login = () => {
   const emailRef = useRef();
@@ -20,15 +21,21 @@ const Login = () => {
   };
 
   return (
-    <div className="form">
-      <h2> Login </h2>
-      <form onSubmit={onSubmit}>
-        <input placeholder="Email" type="email" ref={emailRef} />
-        <input placeholder="Password" type="password" ref={psdRef} />
-        <button type="submit">Login In</button>
-        <p onClick={forgotPasswordHandler}>Forgot Password?</p>
-      </form>
-    </div>
+    <>
+      <div className="banner">
+        <h2> Login </h2>
+      </div>
+
+      <div className="login-image"></div>
+      <div className="login-form">
+        <form onSubmit={onSubmit}>
+          <input placeholder="Email" type="email" ref={emailRef} className="login-input"/>
+          <input placeholder="Password" type="password" ref={psdRef} className="login-input"/>
+          <button type="submit" className="login-button">Login</button>
+          <p onClick={forgotPasswordHandler} className="login-text">Forgot Password?</p>
+        </form>
+      </div>
+    </>
   );
 };
 export default Login;
