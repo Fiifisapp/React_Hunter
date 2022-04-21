@@ -70,4 +70,14 @@
     margin-top: 2rem;
     height: 29vh;
   }
+  .login-button {
+    width: 25%;
+    height: 6.5vh;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #dd5928;
+    border-radius: 5px;
+    color: white;
+    border: none;
+  }
 }
