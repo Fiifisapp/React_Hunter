@@ -84,4 +84,13 @@
     background-color: #5f5b5b;
     cursor: pointer;
   }
+  .login-text {
+    font-size: 0.7rem;
+    color: #dd5928;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+  }
 }
