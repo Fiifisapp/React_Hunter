@@ -7,4 +7,13 @@
     height: 50vh;
     margin-top: 0.5rem;
   }
+
+  .login-input {
+    height: 6vh;
+    color: #dd5928;
+    border: 2px solid #dd5928;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
 }
