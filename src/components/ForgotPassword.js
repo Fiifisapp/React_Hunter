@@ -14,23 +14,30 @@ const ForgotPassword = () => {
         .then(() => {
           emailRef.current.value = "";
         })
-        .then(() =>
-          navigate("/auth")
-        )
+        .then(() => navigate("/auth"))
         .catch((err) => {
           return <p>{err.message}</p>;
         });
     }
   };
   return (
-    <div className="form">
-      <h2> Forgot Password </h2>
+    <>
+      <div className="banner">
+        <h2> Reset Password </h2>
+      </div>
 
-      <input placeholder="Email" type="email" ref={emailRef} />
-      <button type="submit" onClick={forgotPasswordHandler}>
-        Reset
-      </button>
-    </div>
+      <div className="reset-image">
+
+      </div>
+
+      <div className="reset-form">
+        <input placeholder="Email" type="email" ref={emailRef} className="reset-input"/>
+        <p className="reset-text">Enter your email address, and we will send you a new password?</p>
+        <button type="submit" onClick={forgotPasswordHandler} className="reset-button">
+          Reset
+        </button>
+      </div>
+    </>
   );
 };
 
