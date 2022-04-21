@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -21,6 +23,7 @@
     height: 50vh;
     background-image: url(./assets/reset/phone/question_amico.png);
     background-repeat: no-repeat;
+    background-position: center;
   }
   .reset-text{
     font-size: 0.5rem;
@@ -52,5 +55,39 @@
   .reset-button:hover {
     background-color: #5F5B5B;
     cursor: pointer;
+  }
+
+}
+
+/* for iphone SE */
+@media screen and (min-width: 375px){
+  .reset-image{
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 50vh;
+    border: 1px solid red;
+    background-image: url(./assets/reset/phone/question_amico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .reset-form{
+    margin-top: 2rem;
+    height: 20vh;
+  }
+  .reset-input{
+    width: 85%;
+    height: 6vh;
+    color: #DD5928;
+    border: 2px solid #DD5928;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+  }
+
+  .reset-text{
+    font-size: 0.6rem;
+    color: #DD5928;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
   }
 }
