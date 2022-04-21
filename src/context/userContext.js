@@ -1,34 +1,33 @@
 import { createContext, useContext, useState } from "react";
 import {
-    signInWithEmailAndPassword,
-    createUserWithEmailAndPassword,
-    onAuthStateChanged,
-    signOut,
-    updateProfile,
-    sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  updateProfile,
+  sendPasswordResetEmail,
 } from "firebase/auth";
-import { auth } from "../firebase";
-
+import { auth } from "../firebase/index";
 
 export const UserContext = createContext({});
 export const useUserContext = () => {
-    return useContext(UserContext);
-  };
-  
-  export const UserContextProvider = ({ children }) => {
-    const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");
+  return useContext(UserContext);
+};
 
-    useState(() => {
-        setLoading(true);
-        const unsubscribe = onAuthStateChanged(auth, (res) => {
-            if (res) {
-                setUser(res);
-              } else {
-                setUser(null);
-              }
-              setError("");
+export const UserContextProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  useState(() => {
+    setLoading(true);
+    const unsubscribe = onAuthStateChanged(auth, (res) => {
+      if (res) {
+        setUser(res);
+      } else {
+        setUser(null);
+      }
+      setError("");
       setLoading(false);
     });
     return unsubscribe;
@@ -38,16 +37,16 @@ export const useUserContext = () => {
     setLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then(() =>
-      updateProfile(auth.currentUser, {
-        displayName: name,
-      })
-    )
-    .then((res) => console.log(res))
-    .catch((err) => setError(err.message))
-    .finally(() => setLoading(false));
-};
+        updateProfile(auth.currentUser, {
+          displayName: name,
+        })
+      )
+      .then((res) => console.log(res))
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
+  };
 
-const signInUser = (email, password) => {
+  const signInUser = (email, password) => {
     setLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((res) => console.log(res))
@@ -59,11 +58,11 @@ const signInUser = (email, password) => {
     signOut(auth);
   };
 
-  onst forgotPassword = async (email) => {
-    try{
+  const forgotPassword = async (email) => {
+    try {
       await sendPasswordResetEmail(auth, email);
-    } catch( err ){
-      console.log(err.message)
+    } catch (err) {
+      console.log(err.message);
     }
   };
 
