@@ -16,4 +16,9 @@
     margin-top: 1rem;
     margin-left: 0.5rem;
   }
+  .login-form{
+    margin-top: 2rem;
+    height: 29vh;
+    border: 1px solid red;
+  }
 }
