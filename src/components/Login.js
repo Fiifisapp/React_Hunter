@@ -17,11 +17,6 @@ const Login = () => {
 
   const forgotPasswordHandler = () => {
     navigate("/forgot");
-    // const email = emailRef.current.value;
-    // if (email)
-    //   forgotPassword(email).then(() => {
-    //     emailRef.current.value = "";
-    //   });
   };
 
   return (
