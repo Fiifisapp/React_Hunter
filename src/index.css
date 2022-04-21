@@ -66,6 +66,36 @@
     color: #5F5B5B;
     cursor: pointer;
   }
+  .signup-image{
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 50vh;
+    background-image: url(./assets/New_password/phone/Finish\ line-pana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .signup-input{
+    height: 6vh;
+    color: #DD5928;
+    border: 2px solid #DD5928;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
+  .signup-button{
+    width: 27%;
+    height: 6vh;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #DD5928;
+    border-radius: 5px;
+    color: white;
+    border: none;
+  }
+  .signup-button:hover {
+    background-color: #5F5B5B;
+    cursor: pointer;
+  }
 }
 
 /* for iphone SE */
