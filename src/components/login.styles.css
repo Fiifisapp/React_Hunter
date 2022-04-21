@@ -16,36 +16,37 @@
     margin-top: 1rem;
     margin-left: 0.5rem;
   }
-  .login-form{
+  .login-form {
     margin-top: 2rem;
     height: 29vh;
   }
-  .login-button{
+  .login-button {
     width: 27%;
     height: 6vh;
     margin-left: 0.5rem;
     margin-top: 0.5rem;
-    background-color: #DD5928;
+    background-color: #dd5928;
     border-radius: 5px;
     color: white;
     border: none;
   }
   .login-button:hover {
-    background-color: #5F5B5B;
+    background-color: #5f5b5b;
     cursor: pointer;
   }
-  .login-text{
+  .login-text {
     font-size: 0.7rem;
-    color: #DD5928;
+    color: #dd5928;
     margin-left: 0.5rem;
     margin-top: 0.5rem;
     position: absolute;
     top: 80%;
     left: 60%;
   }
-  .login-text:hover{
-      cursor: pointer;
-      color: #5F5B5B;
+  .login-text:hover {
+    cursor: pointer;
+    color: #5f5b5b;
   }
-
 }
+
+
