@@ -57,7 +57,15 @@
     background-color: #5F5B5B;
     cursor: pointer;
   }
-
+  p{
+    color: #dd5928;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  p:hover{
+    color: #5F5B5B;
+    cursor: pointer;
+  }
 }
 
 /* for iphone SE */

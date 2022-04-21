@@ -48,6 +48,7 @@
     color: #5f5b5b;
   }
 }
+
 @media screen and (min-width: 375px) {
   .login-image {
     background-image: url("../assets/login/phone/Curious-amico.svg");
@@ -98,3 +99,5 @@
     color: #5f5b5b;
   }
 }
+
+
