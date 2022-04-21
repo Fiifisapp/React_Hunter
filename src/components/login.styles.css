@@ -19,6 +19,15 @@
   .login-form{
     margin-top: 2rem;
     height: 29vh;
-    border: 1px solid red;
+  }
+  .login-button{
+    width: 27%;
+    height: 6vh;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #DD5928;
+    border-radius: 5px;
+    color: white;
+    border: none;
   }
 }
