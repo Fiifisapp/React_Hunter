@@ -59,7 +59,7 @@ const signInUser = (email, password) => {
     signOut(auth);
   };
 
-  onst forgotPassword = async (email) => {
+  const forgotPassword = async (email) => {
     try{
       await sendPasswordResetEmail(auth, email);
     } catch( err ){
