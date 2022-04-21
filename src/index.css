@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
 *{
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+
+@media screen and (min-width: 280px){
+  .banner{
+    width: 70%;
+    height: 6vh;
+    font-size: 0.8rem;
+    background-color: #DD5928;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border-radius: 0px 0px 8px 8px;
+  }
+
