@@ -30,7 +30,7 @@ const Login = () => {
       <form onSubmit={onSubmit}>
         <input placeholder="Email" type="email" ref={emailRef} />
         <input placeholder="Password" type="password" ref={psdRef} />
-        <button type="submit">Sign In</button>
+        <button type="submit">Login In</button>
         <p onClick={forgotPasswordHandler}>Forgot Password?</p>
       </form>
     </div>
