@@ -80,4 +80,8 @@
     color: white;
     border: none;
   }
+  .login-button:hover {
+    background-color: #5f5b5b;
+    cursor: pointer;
+  }
 }
