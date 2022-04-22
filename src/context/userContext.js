@@ -7,7 +7,7 @@ import {
   updateProfile,
   sendPasswordResetEmail,
 } from "firebase/auth";
-import { auth } from "../firebase/index";
+import { auth } from "../firebase";
 
 export const UserContext = createContext({});
 export const useUserContext = () => {
