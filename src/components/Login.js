@@ -19,6 +19,10 @@ const Login = () => {
   const forgotPasswordHandler = () => {
     navigate("/forgot");
   };
+  
+  const handleLogin = () => {
+    navigate("/domain");
+  };
 
   return (
     <>
@@ -29,10 +33,27 @@ const Login = () => {
       <div className="login-image"></div>
       <div className="login-form">
         <form onSubmit={onSubmit}>
-          <input placeholder="Email" type="email" ref={emailRef} className="login-input"/>
-          <input placeholder="Password" type="password" ref={psdRef} className="login-input"/>
-          <button type="submit" className="login-button">Login</button>
-          <p onClick={forgotPasswordHandler} className="login-text">Forgot Password?</p>
+          <input
+            placeholder="Email"
+            type="email"
+            ref={emailRef}
+            className="login-input"
+          />
+          <input
+            placeholder="Password"
+            type="password"
+            ref={psdRef}
+            className="login-input"
+          />
+          <button
+            type="submit"
+            className="login-button" onClick={handleLogin}
+          >
+            Login
+          </button>
+          <p onClick={forgotPasswordHandler} className="login-text">
+            Forgot Password?
+          </p>
         </form>
       </div>
     </>
