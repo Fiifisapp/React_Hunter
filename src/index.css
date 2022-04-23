@@ -98,7 +98,7 @@
   }
 }
 
-@media screen and (min-width: 360) {
+@media screen and (min-width: 360px) {
   .signup-image {
     width: 100%;
     margin-top: 0.5rem;
@@ -445,3 +445,7 @@
   }
 }
 
+.domain{
+  border: 1px solid #5f5b5b;
+  width: 45%;
+}
