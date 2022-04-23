@@ -1,0 +1,11 @@
+.verifier-input{
+ height: 8vh;   
+ width: 50%;
+ border: 2px solid #dd5928;
+ border-radius: 5px;
+ margin-left: 17rem;
+ color: #dd5928;
+ font-size: 1rem;
+ padding-left: 2rem;
+}
+ 
