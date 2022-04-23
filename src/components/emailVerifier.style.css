@@ -8,4 +8,17 @@
  font-size: 1rem;
  padding-left: 2rem;
 }
+.verifier-button{
+    height: 8.5vh;
+    border: none;
+    width: 11%;
+    background-color: #dd5928;
+    color: white;
+    border-radius: 4px;
+    margin-left: 0.1rem;
+    font-size: 1rem;
+}
+.verifier-input::placeholder{
+    color:#dd5928;
+}
  
