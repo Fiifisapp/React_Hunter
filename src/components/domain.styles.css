@@ -1,0 +1,32 @@
+/* form{
+    width: 60%;
+    height: 30vh;
+    border: 1px solid #dd5928;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.domain-input{
+    height: 8vh;
+    width: 50%;
+    border: 2px solid #dd5928;
+    border-radius: 5px;
+    margin-left: 17rem;
+    color: #dd5928;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+.domain-input::placeholder{
+    
+    color: #dd5928;
+}
+.domain-button{
+    height: 8.5vh;
+    border: none;
+    width: 12%;
+    background-color: #dd5928;
+    border-radius: 5px;
+    color: white;
+    margin-left: 0.25rem;
+}
