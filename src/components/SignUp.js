@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 import styled from "styled-components";
 
+
 const Signup = () => {
   const emailRef = useRef();
   const nameRef = useRef();
@@ -48,15 +49,22 @@ const Signup = () => {
   `;
 
   return (
-    <div className="Form">
-      <h2> New User</h2>
-      <Form onSubmit={onSubmit}>
-        <input placeholder="Email" type="email" ref={emailRef} />
-        <input placeholder="Name" type="name" ref={nameRef} />
-        <input placeholder="Password" type="password" ref={psdRef} />
-        <button type="submit">Register</button>
-      </Form>
-    </div>
+    <>
+      <div className="banner">
+        <h2> Register </h2>
+      </div>
+
+      <div className="signup-image"></div>
+      <div className="signup-form">
+        <form onSubmit={onSubmit}>
+          <input placeholder="Email" type="email" ref={emailRef} className="signup-input"/>
+          <input placeholder="Name" type="name" ref={nameRef} className="signup-input"/>
+          <input placeholder="Password" type="password" ref={psdRef} className="signup-input"/>
+          <button type="submit" className="signup-button">Register</button>
+        </form>
+      </div>
+    </>
+
   );
 };
 export default Signup;
