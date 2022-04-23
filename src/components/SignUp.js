@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
+import styled from "styled-components";
 
 
 const Signup = () => {
@@ -15,6 +16,37 @@ const Signup = () => {
     const password = psdRef.current.value;
     if (email && password && name) registerUser(email, password, name);
   };
+
+  const sizes = {
+    mobileS: "280px",
+    mobileM: "375px",
+    mobileL: "425px",
+    tablet: "768px",
+    laptop: "1024px",
+    desktop: "2560px",
+  };
+
+  const device = {
+    mobileS: `(min-width: ${sizes.mobileS})`,
+    mobileM: `(min-width: ${sizes.mobileM})`,
+    mobileL: `(min-width: ${sizes.mobileL})`,
+    tablet: `(min-width: ${sizes.tablet})`,
+    laptop: `(min-width: ${sizes.laptop})`,
+    desktop: `(min-width: ${sizes.desktop})`,
+  };
+
+
+  const Form = styled.form`
+   @media ${device.mobileS}{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      max-width: 80%; 
+      height: 10vh;
+      gap: 6px;
+   }
+  `;
 
   return (
     <>
@@ -32,6 +64,7 @@ const Signup = () => {
         </form>
       </div>
     </>
+
   );
 };
 export default Signup;
