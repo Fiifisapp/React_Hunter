@@ -1,5 +1,7 @@
 .email-style {
     border: 2px solid #dd5928;
+    border-radius: 6px;
+    width: 280px;
 }
 .email-button {
     /* width:80px; */
