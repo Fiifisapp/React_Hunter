@@ -12,3 +12,5 @@
 
 .email-button:hover{
     color: #dd5928;
+    background-color: white;
+    cursor: pointer;
