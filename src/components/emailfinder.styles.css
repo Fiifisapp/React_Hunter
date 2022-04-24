@@ -10,6 +10,10 @@
     color: #dd5928;
 }
 
+input {
+    font-size: 16px;
+}
+
 .email-button {
     /* width:80px; */
      /* height: 55px; */
