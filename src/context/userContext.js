@@ -59,7 +59,7 @@ export const UserContextProvider = ({ children }) => {
   };
 
   const forgotPassword = async (email) => {
-    try {
+    try{
       await sendPasswordResetEmail(auth, email);
     } catch (err) {
       console.log(err.message);
