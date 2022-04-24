@@ -9,6 +9,7 @@ const EmailFinder = () => {
   const [firstname, setFirstname] =useState();
   const [lastname, setLastname] = useState();
   const [domain, setDomain] =useState();
+  const [data, setData] = useState();
 
   const handleFind = () => {
     emailFinder()
@@ -19,7 +20,8 @@ const EmailFinder = () => {
       const data = await axios.get(`https://api.hunter.io/v2/email-finder?domain=${domain}&first_name=${firstname}&last_name=${lastname}&api_key=ff389661c63ab90742cfe61e1f82343073b8893e`)
 
       if(data){
-        console.log(data)
+        setData(data.data.data);
+        console.log(data.data.data.company);
       }
     } catch (err){
       console.log(err);
@@ -35,6 +37,14 @@ const EmailFinder = () => {
          <button onClick={handleFind}>
            find
          </button>
+
+         {/* <div className="email-container">
+           {
+             email.map((email) => (
+
+             ))
+           }
+         </div> */}
     </div>
   )
 }
