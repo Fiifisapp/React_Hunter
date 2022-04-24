@@ -5,6 +5,11 @@
     margin: 0px 4px;
     padding: 10px 20px;
 }
+
+.email-style::placeholder{
+    color: #dd5928;
+}
+
 .email-button {
     /* width:80px; */
      /* height: 55px; */
