@@ -2,6 +2,8 @@
     border: 2px solid #dd5928;
     border-radius: 6px;
     width: 280px;
+    margin: 0px 4px;
+    padding: 10px 20px;
 }
 .email-button {
     /* width:80px; */
