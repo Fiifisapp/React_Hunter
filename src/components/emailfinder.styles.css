@@ -9,4 +9,6 @@
   font-weight: bold;
   padding: 10px 20px;
 }
-}
+
+.email-button:hover{
+    color: #dd5928;
