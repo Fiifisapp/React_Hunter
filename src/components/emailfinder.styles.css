@@ -1,0 +1,43 @@
+.email-style {
+    border: 2px solid #dd5928;
+    border-radius: 6px;
+    width: 280px;
+    margin: 0px 4px;
+    padding: 10px 20px;
+}
+
+.email-style::placeholder{
+    color: #dd5928;
+}
+
+input {
+    font-size: 16px;
+}
+
+input:focus {
+    border: none;
+}
+
+form {
+    text-align:center;
+}
+
+
+.email-button {
+    /* width:80px; */
+     /* height: 55px; */
+     border: 2px solid #dd5928;
+      border-radius: 6px;
+      background-color: #dd5928;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.email-button:hover{
+    color: #dd5928;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.35s ease-in;
+} 
