@@ -18,6 +18,10 @@ input:focus {
     border: none;
 }
 
+form {
+    text-align:center;
+}
+
 
 .email-button {
     /* width:80px; */
