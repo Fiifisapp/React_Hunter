@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
+
 const Signin = () => {
   const emailRef = useRef();
   const psdRef = useRef();
@@ -16,11 +17,6 @@ const Signin = () => {
 
   const forgotPasswordHandler = () => {
     navigate("/forgot");
-    // const email = emailRef.current.value;
-    // if (email)
-    //   forgotPassword(email).then(() => {
-    //     emailRef.current.value = "";
-    //   });
   };
 
   return (
