@@ -31,12 +31,6 @@ const EmailFinder = () => {
       <Navigation />
       <form>
         <input type="text" className="email-style" placeholder='first name' onChange={e => setFirstname(e.target.value)} />
-        <input type="text" className="email-style" placeholder='last name' onChange={e => setLastname(e.target.value)} />
-        <input type="text" className="email-style" placeholder='domain' onChange={e => setDomain(e.target.value)} />
-        <button className ="email-button" onClick={handleFind}>
-          find
-        </button>
-      </form>
     </div>
   )
 }
