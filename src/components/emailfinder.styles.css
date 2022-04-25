@@ -14,13 +14,7 @@ input {
     font-size: 16px;
 }
 
-input:focus {
-    border: none;
-}
 
- form {
-    text-align:center;
-} 
 
 
 .email-button {
