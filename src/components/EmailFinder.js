@@ -8,7 +8,8 @@ const EmailFinder = () => {
 
   const [firstname, setFirstname] = useState();
   const [lastname, setLastname] = useState();
-  const [domain, setDomain] = useState();
+  const [domain, setDomain] =useState();
+  const [data, setData] = useState();
 
   const handleFind = () => {
     emailFinder()
@@ -18,8 +19,9 @@ const EmailFinder = () => {
     try {
       const data = await axios.get(`https://api.hunter.io/v2/email-finder?domain=${domain}&first_name=${firstname}&last_name=${lastname}&api_key=ff389661c63ab90742cfe61e1f82343073b8893e`)
 
-      if (data) {
-        console.log(data)
+      if(data){
+        setData(data.data.data);
+        console.log(data.data.data.company);
       }
     } catch (err) {
       console.log(err);
@@ -28,9 +30,22 @@ const EmailFinder = () => {
 
   return (
     <div>
-      <Navigation />
-      <form>
-        <input type="text" className="email-style" placeholder='first name' onChange={e => setFirstname(e.target.value)} />
+
+        <Navigation/>
+         <input type="text" className="email-style" placeholder='first name' onChange={e => setFirstname(e.target.value)}/>
+         <input type="text"  className="email-style" placeholder='last name' onChange={e => setLastname(e.target.value)}/>
+         <input type="text" className="email-style" placeholder='domain' onChange={e => setDomain(e.target.value)}/>
+         <button onClick={handleFind} className="email-button">
+           find
+         </button>
+
+         {/* <div className="email-container">
+           {
+             email.map((email) => (
+
+             ))
+           }
+         </div> */}
     </div>
   )
 }
