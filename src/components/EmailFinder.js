@@ -30,14 +30,16 @@ const EmailFinder = () => {
 
   return (
     <div>
-        <Navigation/>
-         <input type="text" placeholder='first name' onChange={e => setFirstname(e.target.value)}/>
-         <input type="text" placeholder='last name' onChange={e => setLastname(e.target.value)}/>
-         <input type="text" placeholder='domain' onChange={e => setDomain(e.target.value)}/>
-         <button onClick={handleFind}>
-           find
-         </button>
 
+        <Navigation/>
+        <div className="mail">
+        <input type="text" className="email-style" placeholder='first name' onChange={e => setFirstname(e.target.value)} />
+        <input type="text" className="email-style" placeholder='last name' onChange={e => setLastname(e.target.value)} />
+        <input type="text" className="email-style" placeholder='domain' onChange={e => setDomain(e.target.value)} />
+        <button  onClick={handleFind} className ="email-button">
+          find
+        </button>
+        </div>
          {/* <div className="email-container">
            {
              email.map((email) => (
