@@ -31,7 +31,7 @@ const EmailFinder = () => {
   return (
     <div>
 
-      <Navigation />
+<Navigation />
       <div className="mail">
         <form id="findForm">
           <input type="text" className="email-style" placeholder='first name' onChange={e => setFirstname(e.target.value)} />
