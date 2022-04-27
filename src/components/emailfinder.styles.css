@@ -53,3 +53,6 @@ email-button:hover {
     #findForm {
         margin: 0 10px;
         display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
