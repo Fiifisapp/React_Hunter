@@ -31,3 +31,10 @@ input {
     padding: 10px 30px;
     margin-left: 15px;
 }
+
+email-button:hover {
+    color: #dd5928;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.35s ease-in;
+}
