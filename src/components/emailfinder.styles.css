@@ -3,47 +3,4 @@
     border-radius: 6px;
     margin: 0px 4px;
     padding: 10px 20px;
-
 }
-
-
-.email-style::placeholder{
-    color: #dd5928;
-}
-
-
- .mail {
-    /* margin-left:7rem; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-} 
-
-@media(max-width:600px){
-    .email-button{
-        display: block;
-        border: 2px solid blue;
-        background-color: black;
-    }
-}
-.email-button {
-    /* width:80px; */
-     /* height: 55px; */
-     border: 2px solid #dd5928;
-      border-radius: 6px;
-      background-color: #dd5928;
-  color: #ffff;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-}
-
-.email-button:hover{
-    color: #dd5928;
-    background-color: white;
-    cursor: pointer;
-    transition: all 0.35s ease-in;
-} 
