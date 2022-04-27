@@ -9,3 +9,7 @@
 .email-style::placeholder {
     color: #dd5928;
 }
+
+input {
+    font-size: 16px;
+}
