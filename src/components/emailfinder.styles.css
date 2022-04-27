@@ -38,3 +38,7 @@ email-button:hover {
     cursor: pointer;
     transition: all 0.35s ease-in;
 }
+
+@media (min-width: 250px) and (max-width: 600px) {
+    #findForm {
+        margin: 0 20px;
