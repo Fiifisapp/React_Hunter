@@ -47,3 +47,9 @@ email-button:hover {
       display: flex;
       }
 }
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    #findForm {
+        margin: 0 10px;
+        display: flex;
